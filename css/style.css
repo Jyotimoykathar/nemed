@@ -96,10 +96,36 @@ span.heading-orange {
 span.heading-violet {
   color: #5f3dc4;
 }
+.typewriter {
+  position: relative;
+  /* width: max-content; */
+}
+.typewriter:before,
+.typewriter:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.typewriter::before {
+  background-color: #f3f0ff;
+  animation: typewriter 6s steps(22) 1s forwards;
+}
+.typewriter::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 6s steps(22) 1s forwards, blink 750ms steps(22) infinite;
+}
+
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 8s forwards;
 }
 /* .hero-img-box {
   tranisiton: translate 3s ease-in 2s;
@@ -183,19 +209,39 @@ figure a {
 
 .testimonial-section {
   background-color: #f3f0ff;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 55fr 45fr;
-  align-items: center;
+  align-items: center; */
 }
 .testimonials-container {
   padding: 9.6rem;
+  position: relative;
 }
 .testimonials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  /* grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
-  column-gap: 8rem;
+  column-gap: 8rem; */
 }
+.testimonials .testimonial {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fffee1;
+}
+.testimonials .testimonial .section {
+  max-width: 80rem;
+  padding: 4rem;
+  text-align: center;
+}
+
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
@@ -287,4 +333,21 @@ figure a {
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
