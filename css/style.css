@@ -42,6 +42,7 @@
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #5f3dc4;
+  letter-spacing: 0.3rem;
 }
 
 .main-nav-link.nav-cta:link,
@@ -111,12 +112,12 @@ span.heading-violet {
 }
 .typewriter::before {
   background-color: #f3f0ff;
-  animation: typewriter 6s steps(22) 1s forwards;
+  animation: typewriter 2s steps(22) 1s forwards;
 }
 .typewriter::after {
   width: 0.125em;
   background: black;
-  animation: typewriter 6s steps(22) 1s forwards, blink 750ms steps(22) infinite;
+  animation: typewriter 2s steps(22) 1s forwards, blink 750ms steps(22) infinite;
 }
 
 .hero-description {
@@ -125,7 +126,27 @@ span.heading-violet {
   margin-bottom: 4.8rem;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease 8s forwards;
+  animation: fadeInUp 2s ease 3s forwards;
+}
+/* new animation added */
+.from-right {
+  grid-column: 3 / 4;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }
 /* .hero-img-box {
   tranisiton: translate 3s ease-in 2s;
@@ -139,16 +160,48 @@ span.heading-violet {
 .descriptive-section {
   padding: 6rem 0 12rem 0;
   margin: 4rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(232, 241, 247, 0.52),
-    rgba(152, 186, 248, 0.73)
-  );
-  /* url("../img/descriptive.png"); */
+  background-image: url("../img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.withback {
+  background-color: rgba(241, 233, 233, 0.74);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.withback p {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.withback h2 {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #fd7e14;
+  margin: 2rem;
+}
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background-color: rgba(241, 233, 233, 0.74);
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  font-size: 1.2em;
+  top: -10px;
 }
 .descriptive-section p {
   font-size: 3rem;
@@ -157,6 +210,14 @@ span.heading-violet {
   margin-bottom: 4.8rem;
   color: #5f3dc4;
   z-index: 1;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 /**************************/
 /* 	OURProduct SECTION   */
@@ -215,29 +276,29 @@ figure a {
 }
 .testimonials-container {
   padding: 9.6rem;
-  position: relative;
+  /* position: relative; */
 }
 .testimonials {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   /* grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem; */
 }
 .testimonials .testimonial {
-  min-width: 100%;
-  height: auto;
+  /* min-width: 100%; */
+  /* height: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #fffee1;
 }
 .testimonials .testimonial .section {
-  max-width: 80rem;
+  /* max-width: 80rem; */
   padding: 4rem;
   text-align: center;
 }
@@ -334,7 +395,72 @@ figure a {
 .footer-link:active {
   color: #555;
 }
+/**************************/
+/* PRODUCT page*/
+/**************************/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
 
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/**************************/
+/* MVP page*/
+/**************************/
+.mvp-section {
+  padding: 6rem 0 12rem 0;
+  margin: 4rem;
+}
+/**************************/
+/* 4SURE page*/
+/**************************/
+.Foursure-section {
+  padding: 6rem 0 12rem 0;
+  /* margin: 4rem; */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
+}
+.wrapper-section h3 {
+  background-color: #5f3dc4;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.wrap-description {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  /* margin-bottom: 1rem; */
+}
+.head h2 {
+  color: #ff922b;
+}
+.heading-secondary span {
+  background-color: #5f3dc4;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+}
 @keyframes typewriter {
   to {
     left: 100%;
