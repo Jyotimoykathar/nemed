@@ -10,24 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Nemed &mdash; Brings life to your Life</title>
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="index.html" class="nemed-logo">
         <!-- <img class="logo" src="" alt="Nemed logo"> -->
-        LOGO
+        NEMED
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
+          <li><a href="index.html" class="main-nav-link">HOME</a></li>
           <li><a href="about.html" class="main-nav-link">ABOUT US</a></li>
-          <li><a href="product.html" class="main-nav-link">PRODUCTS</a></li>
-          <li><a href="contact.html" class="main-nav-link">CONTACT US</a></li>
-          <li><a href="#" class="main-nav-link">PRICING</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+          <li>
+            <a href="product.html" class="main-nav-link">PRODUCTS</a>
+          </li>
+          <li><a href="mvp.html" class="main-nav-link">MVP</a></li>
+          <li>
+            <a href="contact.html" class="main-nav-link nav-cta">
+              GET IN TOUCH
+            </a>
+          </li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -41,19 +47,24 @@
         <section class="section-hero">
           <div class="hero">
             <div class="hero-text-box">
-              <h1 class="heading-primary">
-                Nemed &dash; brings life to your LIFE
+              <h1 class="heading-primary typewriter">
+                <span class="heading-orange"> Nemed &dash; brings </span>
+                <span class="heading-violet">life to</span>
+                <span class="heading-orange">your</span>
+                <span class="heading-violet">LIFE</span>
               </h1>
               <p class="hero-description">
-                The smart 365-days-per-year medicine subscription that will make
-                you healthy again. Tailored to your personal requirements and
-                nutritional needs.
+                The smart 365-days available medicine that will make you healthy
+                again. Tailored to your personal requirements and nutritional
+                needs.
               </p>
-              <a href="#cta" class="btn btn--full margin-right-sm"
+              <a href="product.html" class="btn btn--full margin-right-sm"
                 >Start caring</a
               >
 
-              <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+              <a href="about.html" class="btn btn--outline"
+                >Learn more &darr;</a
+              >
               <!-- <div class="delivered-meals">
                 <div class="delivered-imgs">
                   <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -70,11 +81,11 @@
             </div>
             <div class="hero-img-box">
               <picture>
-                <source srcset="img/4SURE3D.jpeg" type="image/jpeg" />
-                <source srcset="img/4SURE3D.jpeg" type="image/jpeg" />
+                <source srcset="img/Monfast-FX.png" type="image/png" />
+                <source srcset="img/Monfast-FX.png" type="image/png" />
 
                 <img
-                  src="img/4SURE3D.jpeg"
+                  src="img/Monfast-FX.png"
                   class="hero-img"
                   alt="image of medicine product"
                 />
@@ -83,6 +94,140 @@
           </div>
         </section>
       </div>
+
+      <section class="descriptive-section">
+        <div class="container withback">
+          <h2 class="heading-secondary">ABOUT</h2>
+          <p class="">
+            NEMED is a company started today with a Vision for tomorrow to earn
+            a name in Pharmaceutical Industry.
+          </p>
+          <hr />
+          <p class="">
+            At NEMED we always believe that great businesses are the results of
+            great partnerships. For the same reason, we place high value in
+            every customer and his needs and work endlessly upon building a good
+            rapport with each one of them. Perhaps, this paradigm of placing our
+            customers first has enabled us to penetrate the domestic market
+            successfully in a very short span of time.
+          </p>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div class="product-head">
+          <h2 class="heading-secondary auto-text">OUR FEATURE PRODUCTS</h2>
+        </div>
+        <div class="products">
+          <figure class="product-item">
+            <a href="proppiDSR.html">
+              <img
+                src="img/ProPPI-DSR.png"
+                alt="image of product1"
+                class="product-img"
+              />
+              <p class="product-description">PRO PPI-DSR</p>
+            </a>
+          </figure>
+          <figure class="product-item">
+            <a href="#">
+              <img
+                src="img/R-GERD DSR.png"
+                alt="image of product2"
+                class="product-img"
+              />
+              <p class="product-description">R-GERD DSR</p>
+            </a>
+          </figure>
+          <figure class="product-item">
+            <a href="proppi.html">
+              <img
+                src="img/ProPPI-40.png"
+                alt="image of product3"
+                class="product-img"
+              />
+              <p class="product-description">PRO PPI-40</p>
+            </a>
+          </figure>
+          <figure class="product-item">
+            <a href="#">
+              <img
+                src="img/3FLAM .png"
+                alt="image of product4"
+                class="product-img"
+              />
+              <p class="product-description last">3FLAME</p>
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <div class="section">
+                <img
+                  class="testimonial-img"
+                  alt="Photo of customer Dave Bryson"
+                  src="img/customers/dave.jpg"
+                />
+                <blockquote class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime asperiores tempora reiciendis fugiat debitis
+                  repellendus!
+                </blockquote>
+                <p class="testimonial-name">&mdash; Dave Bryson</p>
+              </div>
+            </figure>
+            <figure class="testimonial">
+              <div class="section">
+                <img
+                  class="testimonial-img"
+                  alt="Photo of customer Ben Hadley"
+                  src="img/customers/ben.jpg"
+                />
+                <blockquote class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, aperiam. Incidunt nisi eligendi laborum quo.
+                </blockquote>
+                <p class="testimonial-name">&mdash; Ben Hadley</p>
+              </div>
+            </figure>
+            <figure class="testimonial">
+              <div class="section">
+                <img
+                  class="testimonial-img"
+                  alt="Photo of customer Steve Miller"
+                  src="img/customers/steve.jpg"
+                />
+                <blockquote class="testimonial-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Minima, libero earum maiores eaque aperiam culpa?
+                </blockquote>
+                <p class="testimonial-name">&mdash; Steve Miller</p>
+              </div>
+            </figure>
+            <figure class="testimonial">
+              <div class="section">
+                <img
+                  class="testimonial-img"
+                  alt="Photo of customer Hannah Smith"
+                  src="img/customers/hannah.jpg"
+                />
+                <blockquote class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolor in modi voluptas a illum. Doloremque.
+                </blockquote>
+                <p class="testimonial-name">&mdash; Hannah Smith</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -90,7 +235,7 @@
         <div class="logo-col">
           <a href="index.html" class="footer-logo">
             <!-- <img src="" alt="Nemed logo" class="logo" /> -->
-            LOGO
+            NEMED
           </a>
           <ul class="social-links">
             <li>
@@ -121,7 +266,7 @@
               Paldi Sarkhej Road, Paldi, Ahmedabad - 380007
             </p>
             <p>
-              <a href="tel:9099790799" class="footer-link">90997790799</a>
+              <a href="tel:9099790799" class="footer-link">9099790799</a>
               <br />
               <a href="mailto:info@nemedhealthcare.com" class="footer-link"
                 >info@nemedhealthcare.com</a
@@ -132,7 +277,11 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -141,5 +290,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/observer.js"></script>
   </body>
 </html>
