@@ -248,7 +248,9 @@ hr:after {
   justify-content: center;
   align-items: center;
 }
-
+.product-item {
+  overflow: hidden;
+}
 .product-img {
   width: 100%;
 }
@@ -406,6 +408,7 @@ figure a {
 }
 .gallery-item {
   overflow: hidden;
+  position: relative;
 }
 
 .gallery-item img {
@@ -417,7 +420,35 @@ figure a {
 .gallery-item img:hover {
   transform: scale(1.1);
 }
-
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ff922b;
+  transition: all 0.4s;
+  background-color: white;
+  transform: translateY(-100%);
+}
+.caption h3 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.gallery-item:hover .caption {
+  transform: translateY(0);
+}
+.gallery-item:hover img {
+  transform: translateY(100%);
+}
 /**************************/
 /* MVP page*/
 /**************************/
@@ -432,18 +463,59 @@ figure a {
   padding: 6rem 0 12rem 0;
   /* margin: 4rem; */
 }
-
+.sub-heading {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ff922b;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.75px;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Foursure-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9.6rem;
+}
+.title {
+  display: block;
+  color: #ff922b;
+  font-size: 6.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.title span {
+  background-color: #5f3dc4;
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  margin-right: 0.5rem;
+}
+.title-description {
+  width: 29%;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   gap: 2rem;
 }
 .wrapper-section h3 {
+  width: 16.4rem;
   background-color: #5f3dc4;
   color: #fff;
-  display: inline-block;
+  display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
 }
@@ -452,15 +524,57 @@ figure a {
   line-height: 1.5;
   /* margin-bottom: 1rem; */
 }
-.head h2 {
+.Foresure-cure {
+  margin-left: 20rem;
+}
+.Foresure-cure .cures {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.checkmark-icon {
+  height: 3.4rem;
+  width: 3.4rem;
   color: #ff922b;
 }
-.heading-secondary span {
+
+/**************************/
+/* Nedpro-K page*/
+/**************************/
+.title.netpro-k {
+  display: block;
+  color: #5f3dc4;
+  text-transform: uppercase;
+  font-size: 6.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.title.netpro-k span {
+  background-color: #ff922b;
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  margin-left: 0.5rem;
+}
+.title-description.netprok {
+  width: 54%;
+}
+.wrapper-section .nedpro-k h3 {
+  width: 40rem;
   background-color: #5f3dc4;
   color: #fff;
-  padding: 1rem 1.5rem;
-  margin-right: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
 }
+
 @keyframes typewriter {
   to {
     left: 100%;
