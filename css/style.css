@@ -160,11 +160,19 @@ span.heading-violet {
 .descriptive-section {
   padding: 6rem 0 12rem 0;
   margin: 4rem;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/about-title.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.withback .descriptive-para1 {
+  transform: translateY(4rem);
+  animation: fadeInUp 2s ease 3s forwards;
+}
+.withback .descriptive-para2 {
+  transform: translateY(4rem);
+  animation: fadeInUp 2s ease 4s forwards;
 }
 .withback {
   background-color: rgba(241, 233, 233, 0.74);
@@ -251,8 +259,10 @@ hr:after {
 .product-item {
   overflow: hidden;
 }
-.product-img {
+.product-item img {
+  /* display: block; */
   width: 100%;
+  transition: all 0.4s;
 }
 .product-description {
   font-size: 2rem;
@@ -260,6 +270,9 @@ hr:after {
   line-height: 1.5;
   margin-top: 2rem;
   color: #555;
+}
+.product-item img:hover {
+  transform: scale(1.1);
 }
 
 figure a {
@@ -326,6 +339,29 @@ figure a {
 .about {
   padding: 4.8rem;
 }
+.about-title {
+  width: 100vw;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/about-title.jpg");
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: rgb(85, 80, 80); */
+}
+.about-head {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+  z-index: 1;
+}
+.about-head p {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 .about .heading-secondary {
   color: #ff922b;
 }
@@ -333,6 +369,10 @@ figure a {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+}
+.about-title .heading-secondary {
+  margin-bottom: 0.1rem;
+  color: #ff922b;
 }
 
 /**************************/
@@ -397,9 +437,19 @@ figure a {
 .footer-link:active {
   color: #555;
 }
+
 /**************************/
 /* PRODUCT page*/
 /**************************/
+.production {
+  margin-bottom: 10rem;
+}
+.production h2 {
+  display: flex;
+  justify-content: center;
+  color: #ff922b;
+  margin-top: 6.3rem;
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -409,6 +459,9 @@ figure a {
 .gallery-item {
   overflow: hidden;
   position: relative;
+}
+.gallery-item .caption h2 {
+  font-size: 4.5rem;
 }
 
 .gallery-item img {
@@ -456,6 +509,71 @@ figure a {
   padding: 6rem 0 12rem 0;
   margin: 4rem;
 }
+.description {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.mission h3,
+.passion h3 {
+  font-size: 6rem;
+  color: #5f3dc4;
+}
+.vission h3 {
+  color: #ff922b;
+  font-size: 6rem;
+}
+/**************************/
+/* 	CONTACT SECTION 	 	*/
+/************************/
+.contactpage {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 12rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  margin-top: 4.5rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.contactpage h2 {
+  display: grid;
+  place-content: center;
+  margin: 4rem 0;
+  color: #ff922b;
+}
+.contact-body {
+  margin-bottom: 20rem;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid black;
+}
+
 /**************************/
 /* 4SURE page*/
 /**************************/
@@ -463,6 +581,7 @@ figure a {
   padding: 6rem 0 12rem 0;
   /* margin: 4rem; */
 }
+
 .sub-heading {
   display: block;
   font-size: 2.5rem;
@@ -495,15 +614,19 @@ figure a {
   margin-bottom: 1rem;
 }
 .title span {
+  margin-right: 0.5rem;
+  padding: 0.4rem 1.5rem;
   background-color: #5f3dc4;
   color: #fff;
-  padding: 0.4rem 1.5rem;
-  margin-right: 0.5rem;
 }
+
 .title-description {
   width: 29%;
   font-size: 1.3rem;
   line-height: 1.5;
+}
+.product-img {
+  width: 100%;
 }
 .wrapper {
   display: flex;
@@ -574,7 +697,13 @@ figure a {
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
 }
-
+/**************************/
+/* Proppi page*/
+/**************************/
+.title.proppi span {
+  color: #5f3dc4;
+  background: none;
+}
 @keyframes typewriter {
   to {
     left: 100%;
