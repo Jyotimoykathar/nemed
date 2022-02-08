@@ -112,12 +112,12 @@ span.heading-violet {
 }
 .typewriter::before {
   background-color: #f3f0ff;
-  animation: typewriter 2s steps(22) 1s forwards;
+  animation: typewriter 2s steps(12) 1s forwards;
 }
 .typewriter::after {
   width: 0.125em;
   background: black;
-  animation: typewriter 2s steps(22) 1s forwards, blink 750ms steps(22) infinite;
+  animation: typewriter 2s steps(12) 1s forwards, blink 750ms steps(12) infinite;
 }
 
 .hero-description {
@@ -285,6 +285,7 @@ figure a {
 
 .testimonial-section {
   background-color: #f3f0ff;
+ 
   /* display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center; */
@@ -294,6 +295,8 @@ figure a {
   /* position: relative; */
 }
 .testimonials {
+  /* border:1px solid black; */
+  clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
   /* position: absolute; */
   /* top: 0;
   left: 0; */
@@ -442,14 +445,18 @@ figure a {
 /* PRODUCT page*/
 /**************************/
 .production {
+  /* margin-top: 10rem; */
   margin-bottom: 10rem;
 }
-.production h2 {
-  display: flex;
+.production-heading {
+  display:flex;
   justify-content: center;
-  color: #ff922b;
   margin-top: 6.3rem;
+  
 }
+.production h2{
+  color: #ff922b;
+  }
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -624,6 +631,7 @@ figure a {
   width: 29%;
   font-size: 1.3rem;
   line-height: 1.5;
+  color: #2C3333;
 }
 .product-img {
   width: 100%;
