@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -29,7 +35,6 @@
           <li>
             <a href="product.html" class="main-nav-link">PRODUCTS</a>
           </li>
-          <li><a href="mvp.html" class="main-nav-link">MVP</a></li>
           <li>
             <a href="contact.html" class="nav-cta"> GET IN TOUCH </a>
           </li>
@@ -42,219 +47,42 @@
     </header>
 
     <main>
-      <!-- <div class="hero-section">
-        <section class="section-hero">
-          <div class="hero">
-            <div class="hero-text-box">
-              <h1 class="heading-primary">
-                <div class="hero-first">
-                  <span class="heading-orange"> Nemed &dash; brings </span>
-                  <span class="heading-violet">life</span>
-                </div>
-                <div class="hero-second">
-                  <span class="heading-orange"> to your</span>
-                  <span class="heading-violet">LIFE</span>
-                </div>
-              </h1>
-              <p class="hero-description">
-                The smart 365-days available medicine that will make you healthy
-                again. Tailored to your personal requirements and nutritional
-                needs.
-              </p>
-              <a href="product.html" class="btn btn--full margin-right-sm"
-                >Start caring</a
-              >
-
-              <a href="about.html" class="btn btn--outline"
-                >Learn more &darr;</a
-              >
-            </div>
-            <div class="hero-img-box">
-              <picture>
-                <source srcset="img/Monfast-FX.png" type="image/png" />
-                <source srcset="img/Monfast-FX.png" type="image/png" />
-
-                <img
-                  src="img/Monfast-FX.png"
-                  class="hero-img"
-                  alt="image of medicine product"
-                />
-              </picture>
-            </div>
+      <!-- CROSSFADE CAROUSEL -->
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="..." />
           </div>
-        </section>
-        <div class="spacer layer1"></div>
-      </div> -->
-
-      <!-- <section class="descriptive-section">
-        <div class="container withback">
-          <h2 class="heading-secondary">ABOUT</h2>
-          <p class="descriptive-para1">
-            NEMED is a company started today with a Vision for tomorrow to earn
-            a name in Pharmaceutical Industry.
-          </p>
-          <p class="descriptive-para2">
-            At NEMED we always believe that great businesses are the results of
-            great partnerships. For the same reason, we place high value in
-            every customer and his needs and work endlessly upon building a good
-            rapport with each one of them. Perhaps, this paradigm of placing our
-            customers first has enabled us to penetrate the domestic market
-            successfully in a very short span of time.
-          </p>
-        </div>
-      </section> -->
-
-      <!-- <section class="product-section">
-        <div class="product-head">
-          <h2 class="heading-secondary auto-text">OUR FEATURE PRODUCTS</h2>
-        </div>
-        <div class="products">
-          <figure class="product-item">
-            <a href="4sure.html">
-              <img
-                src="img/2png.png"
-                alt="image of 4sure"
-                class="product-img"
-              />
-              <p class="product-description">4SURE</p>
-            </a>
-          </figure>
-          <figure class="product-item">
-            <a href="proppi.html">
-              <img
-                src="img/ProPPI-40.png"
-                alt="image of product2"
-                class="product-img"
-              />
-              <p class="product-description">PRO PPI</p>
-            </a>
-          </figure>
-          <figure class="product-item">
-            <a href="proppiDSR.html">
-              <img
-                src="img/ProPPI-DSR.png"
-                alt="image of product3"
-                class="product-img"
-              />
-              <p class="product-description">PRO PPI-DSR</p>
-            </a>
-          </figure>
-          <figure class="product-item">
-            <a href="#">
-              <img
-                src="img/3FLAM .png"
-                alt="image of product4"
-                class="product-img"
-              />
-              <p class="product-description last">3FLAME</p>
-            </a>
-          </figure>
-        </div>
-      </section> -->
-
-      <!-- <section class="testimonial-section">
-        <div class="testimonials-container">
-          <span class="subheading">Testimonials</span>
-          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
-
-          <div class="testimonials">
-            <figure class="testimonial">
-              <div class="section">
-                <img
-                  class="testimonial-img"
-                  alt="Photo of customer Dave Bryson"
-                  src="img/customers/dave.jpg"
-                />
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime asperiores tempora reiciendis fugiat debitis
-                  repellendus!
-                </blockquote>
-                <p class="testimonial-name">&mdash; Dave Bryson</p>
-              </div>
-            </figure>
-            <figure class="testimonial">
-              <div class="section">
-                <img
-                  class="testimonial-img"
-                  alt="Photo of customer Ben Hadley"
-                  src="img/customers/ben.jpg"
-                />
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam, aperiam. Incidunt nisi eligendi laborum quo.
-                </blockquote>
-                <p class="testimonial-name">&mdash; Ben Hadley</p>
-              </div>
-            </figure>
-            <figure class="testimonial">
-              <div class="section">
-                <img
-                  class="testimonial-img"
-                  alt="Photo of customer Steve Miller"
-                  src="img/customers/steve.jpg"
-                />
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Minima, libero earum maiores eaque aperiam culpa?
-                </blockquote>
-                <p class="testimonial-name">&mdash; Steve Miller</p>
-              </div>
-            </figure>
-            <figure class="testimonial">
-              <div class="section">
-                <img
-                  class="testimonial-img"
-                  alt="Photo of customer Hannah Smith"
-                  src="img/customers/hannah.jpg"
-                />
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolor in modi voluptas a illum. Doloremque.
-                </blockquote>
-                <p class="testimonial-name">&mdash; Hannah Smith</p>
-              </div>
-            </figure>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
           </div>
         </div>
-      </section> -->
-
-      <!-- just checking carousel -->
-      <section class="carousel">
-        <!-- Slideshow container -->
-        <div class="slideshow-container fade">
-          <!-- Full images with numbers and message Info -->
-          <div class="Containers">
-            <div class="MessageInfo">1 / 3</div>
-            <img src="img/ProPPI-DSR.png" style="width: 100%" />
-            <div class="Info">First caption</div>
-          </div>
-
-          <div class="Containers">
-            <div class="MessageInfo">2 / 3</div>
-            <img src="img/2png.png" style="width: 100%" />
-            <div class="Info">Second Caption</div>
-          </div>
-
-          <div class="Containers">
-            <div class="MessageInfo">3 / 3</div>
-            <img src="img/ProPPI-40.png" style="width: 100%" />
-            <div class="Info">Third Caption</div>
-          </div>
-
-          <!-- Back and forward buttons -->
-          <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
-
-        <!-- The circles/dots -->
-        <div style="text-align: center">
-          <span class="dots" onclick="currentSlide(1)"></span>
-          <span class="dots" onclick="currentSlide(2)"></span>
-          <span class="dots" onclick="currentSlide(3)"></span>
-        </div>
-      </section>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <!-- shapedivder -->
       <div class="waver">
@@ -330,10 +158,11 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <!-- <script type="text/javascript" src="js/skrollr.js"></script>
-    <script type="text/javascript">
-      var s = skrollr.init();
-    </script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
