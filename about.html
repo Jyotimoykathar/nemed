@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -57,6 +58,7 @@
           management team consists of young and experienced professionals having
           combined experience of 80 years in Pharma segment.
         </p>
+
         <p class="about-descriptions">
           At NEMED we always believe that great businesses are the results of
           great partnerships. For the same reason, we place high value in every
@@ -65,14 +67,16 @@
           ﬁrst has enabled us to penetrate the domestic market successfully in a
           very short span of time.
         </p>
-        <p class="about-descriptions">
+
+        <p class="about-descriptions" data-aos="fade-up">
           Sharing strong bond with the customers, attending to their needs
           diligently and healthy mutual growth leading is what we strive to
           achieve at NEMED . We strongly believe in TEAM work as our strong
           conviction is T ogether E veryone A chieves M ore….. “Coming together
           is beginning Keeping together is progress Working together is Success”
         </p>
-        <p class="about-descriptions">
+
+        <p class="about-descriptions" data-aos="fade-up">
           Finest quality has known to be synonymous with our products. Right
           from the inception stages, quality has found a profound place in all
           our endeavours. At every phase of manufacturing, right from raw
@@ -90,8 +94,8 @@
 
       <section class="mvp-section">
         <div class="mvp-wrapper container">
-          <div class="mission">
-            <h3 class="heading-tertiary">MISSION</h3>
+          <div class="mission" data-aos="fade-up">
+            <h3 class="heading-tertiary center b-orange">MISSION</h3>
             <p class="description">
               Provide best healthcare products in affordable price through
               dedication, innovation and need based orientation. To have a PAN
@@ -99,15 +103,15 @@
               unit.
             </p>
           </div>
-          <div class="vission">
-            <h3 class="heading-tertiary">VISSION</h3>
+          <div class="vission" data-aos="fade-up">
+            <h3 class="heading-tertiary center b-orange">VISSION</h3>
             <p class="description">
               Have a sound presence in Eastern India within March 2023 with a
               formidable team
             </p>
           </div>
-          <div class="passion">
-            <h3 class="heading-tertiary">PASSION</h3>
+          <div class="passion" data-aos="fade-up">
+            <h3 class="heading-tertiary center b-orange">PASSION</h3>
             <p class="description">
               We are passionately committed to provide best healthcare products
               to fulfill our mission through a holistic approach.
@@ -189,6 +193,14 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        delay: 0,
+        duration: 1000,
+      });
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
