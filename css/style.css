@@ -10,11 +10,7 @@
   padding: 0 4.8rem;
   border-top: 0.4rem solid #fd7e14;
 }
-.logo {
-  /* margin: 2rem; */
-  /* padding: rem; */
-  /* height: 2.2rem; */
-}
+
 .nemed-logo {
   text-decoration: none;
   font-weight: 600;
@@ -559,7 +555,6 @@
 }
 .wrapper-section {
   display: flex;
-  justify-content: ;
   gap: 2rem;
 }
 .wrapper-section h3 {
