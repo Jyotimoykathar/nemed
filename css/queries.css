@@ -62,6 +62,17 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+  .team-header {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+  .mvp-wrapper h3 {
+    font-size: 4.5rem;
+  }
+  .description {
+    padding: 3rem 10rem;
+  }
 }
 
 /**************************/

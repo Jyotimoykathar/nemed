@@ -87,16 +87,21 @@
   background-color: #f3f0ff;
   padding: 0 0 12rem 0;
 }
-/* .carousel .carousel-inner {
-  height: 500px;
+.carousel .carousel-inner {
+  height: 80vh;
+}
+.carousel-inner .carousel-item img {
+  object-fit: cover;
+  position: relative;
+  left: 0;
 }
 
-.carousel-inner .carousel-item img {
+/* .carousel-inner .carousel-item img {
   position: absolute;
   object-fit: cover;
   top: 0;
   left: 0;
-  min-height: 500px;
+  max-height: 80vh;
 } */
 /* .item1 {
   background-image: url(/img/carousel1.jpg);
@@ -109,7 +114,7 @@
 }
 .carousel-caption {
   position: absolute;
-  top: 40%;
+  top: 15%;
   z-index: 2;
 }
 /* .carousel-item{
@@ -341,6 +346,70 @@
   color: #ff922b;
   font-size: 6rem;
 }
+/**************************/
+/* TEAM section*/
+/**************************/
+.team-section {
+  padding: 8rem;
+  background-color: #fff4e6;
+}
+.ourTeam .grid {
+  column-gap: 4rem;
+}
+.ourTeam {
+  padding-bottom: 10rem;
+}
+.ourTeam h3 {
+  padding-top: 1.5rem;
+}
+.team-img img {
+  width: 100%;
+}
+.allTeam-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  margin-bottom: 15rem;
+}
+.team-header {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 3rem;
+  color: #ff922b;
+}
+.leader-img-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.leader-img-box::before,
+.leader-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.leader-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #ffd8a8;
+  z-index: -2;
+}
+.leader-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #ffc078;
+  z-index: -1;
+}
+.leader-img {
+  width: 35%;
+}
 
 /**************************/
 /* PRODUCT page*/
@@ -452,6 +521,15 @@
   height: 4.5rem;
   width: 4.5rem;
   color: #555;
+}
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #ffe8cc;
+  /* margin-bottom: 3.2rem; */
+  padding: 1.6rem;
+  border-radius: 50%;
 }
 .cta-form label {
   display: block;
