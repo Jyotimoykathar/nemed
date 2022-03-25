@@ -18,25 +18,28 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="nemed-logo">
-        <img class="logo" src="img/logon.png" alt="Nemed logo" />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a href="index.html" class="main-nav-link">HOME</a></li>
-          <li><a href="about.html" class="main-nav-link">ABOUT US</a></li>
-          <li>
-            <a href="product.html" class="main-nav-link">PRODUCTS</a>
-          </li>
-          <li>
-            <a href="contact.html" class="nav-cta"> GET IN TOUCH </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
+      <div class="header-content">
+        <a href="index.html" class="nemed-logo">
+          <!-- <img class="logo" src="img/logon.png" alt="Nemed logo" /> -->
+          Nemed
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a href="index.html" class="main-nav-link">HOME</a></li>
+            <li><a href="about.html" class="main-nav-link">ABOUT US</a></li>
+            <li>
+              <a href="product.html" class="main-nav-link">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-cta"> GET IN TOUCH </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -49,7 +52,7 @@
         </div>
       </section>
       <section class="about container">
-        <h2 class="heading-secondary">ABOUT NEMED</h2>
+        <h2 class="heading-secondary">ABOUT US</h2>
         <h3>Quality is the hallmark of NEMED</h3>
         <p class="about-descriptions">
           NEMED is a company started today with a Vision for tomorrow to earn a
@@ -92,7 +95,7 @@
       </section>
 
       <section class="mvp-section">
-        <div class="mvp-wrapper container">
+        <div class="mvp-wrapper grid grid--3-cols">
           <div class="mission" data-aos="fade-up">
             <h3 class="heading-tertiary center b-orange">MISSION</h3>
             <p class="description">
@@ -237,9 +240,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 400,
+        offset: 190,
         delay: 0,
-        duration: 1000,
+        duration: 700,
       });
     </script>
     <script
