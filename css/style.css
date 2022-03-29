@@ -315,6 +315,7 @@
 /* 			ABOUT Page	 	*/
 /************************/
 .about {
+  background-color: #f3f0ff;
   padding: 4.8rem;
 }
 .about h2 {
@@ -620,9 +621,18 @@
 .Foursure-section {
   padding: 6rem 0 12rem 0;
   text-transform: uppercase;
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
-
+.productHeader-img {
+  margin-bottom: 5.3rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+.productHeader-img img {
+  height: 30rem;
+  width: 70vw;
+}
 .sub-heading {
   display: block;
   font-size: 2.5rem;
